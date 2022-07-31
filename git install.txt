@@ -1,0 +1,61 @@
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Hello/.ssh/id_rsa):
+Created directory '/c/Users/Hello/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Hello/.ssh/id_rsa
+Your public key has been saved in /c/Users/Hello/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:uvGNKvQwz/vIc8V5mBu4xSOfwaHZXWwDUeS89Fovx8U Hello@DESKTOP-MBOE7AD
+The key's randomart image is:
++---[RSA 3072]----+
+|            .+o  |
+|            .o   |
+|             o+  |
+|          .  .=+ |
+|        SO * o..E|
+|    +  .= # o  +o|
+|   . *o  * B  o +|
+|    ..==oo+    o |
+|     .**+ .      |
++----[SHA256]-----+
+
+
+$ eval $(ssh-agent)
+Agent pid 859
+
+Hello@DESKTOP-MBOE7AD MINGW64 ~
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/Hello/.ssh/id_rsa (Hello@DESKTOP-MBOE7AD)
+
+Hello@DESKTOP-MBOE7AD MINGW64 ~
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCuRql+ge7+DewzY4adnGhLHk2n0MY2YXZUwebtedfw2IHzyxrAkWNrQyq0s8US6HHcXm82ptQYkELEfNLj4WPVXsJZpeHuEP1aAb0+ni76PHpGlL1lNIP/TLauKfp+6rBVQh/kjfXkteChqocA2xyVv4o/4iyrBJrgJTAPI91k6pJ9QWKWc8ch8cURCRHGoh3tMkTY01YgP5GaOoGxEoKFo0BCZpwScw2B7ZQF5tbTLmxxDB2qKdGNu8BFLUkHuQFt9hQTfzFarTl11zuZSMuqcnH9Vki9S6LA9Z647TUK7EaM24c32gMcavrDw+e80va6IDw1d1XsMwSg/bGXDGP7+WPUhN1kxPVof+WH5p8gUh61VKQ2qEgjVR9+ec45SYMYmERwf5MLQUQ54OVitasKQNsdXg9RHrf8FHMZBSw4oBD19I9MHWmTa4q1p69JQ4sCbdN+kCSm/nKoCyJJ87q3ixkJr1HQGWY4LYh/DNI04+2OQN7UFlvUlkDlbddAyH0= Hello@DESKTOP-MBOE7AD
+
+Hello@DESKTOP-MBOE7AD MINGW64 ~
+$ git config --global user.name "Hitesh"
+
+Hello@DESKTOP-MBOE7AD MINGW64 ~
+$ git config --global user.email "hiteshhisaroj@gmail.com"
+
+
+open your drive where you want to save
+
+
+Hello@DESKTOP-MBOE7AD MINGW64 /e
+$ git clone git@bitbucket.org:ashokrajput/appamplify_campaigns.git
+Cloning into 'appamplify_campaigns'...
+The authenticity of host 'bitbucket.org (2406:da00:ff00::6b17:d1f5)' can't be established.
+RSA key fingerprint is SHA256:zzXQOXSRBEiUtuE8AikJYKwbHaxvSc0ojez9YXaGp1A.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'bitbucket.org' (RSA) to the list of known hosts.
+remote: Enumerating objects: 123755, done.
+remote: Counting objects: 100% (8327/8327), done.
+remote: Compressing objects: 100% (7246/7246), done.
+remote: Total 123755 (delta 5772), reused 1409 (delta 1081), pack-reused 115428
+Receiving objects: 100% (123755/123755), 93.71 MiB | 5.70 MiB/s, done.
+Resolving deltas: 100% (95565/95565), done.
+Updating files: 100% (9168/9168), done.
+
